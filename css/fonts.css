@@ -1,0 +1,13 @@
+
+/* --------------------------------- Fonts --------------------------------- */
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: normal;
+    src: url('fonts/OpenSans/OpenSans-Regular.eot');
+    src: url('fonts/OpenSans/OpenSans-Regular.eot?#iefix') format('eot'),
+        url('fonts/OpenSans/OpenSans-Regular.woff') format('woff'),
+        url('fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+        url('fonts/OpenSans/OpenSans-Regular.ttf') format('truetype'),
+        url('fonts/OpenSans/OpenSans-Regular.svg') format('svg');
+}

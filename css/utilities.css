@@ -1,0 +1,77 @@
+/************************/
+/****** Utilities *******/
+/************************/
+
+/* Text */
+.u-text--center {
+    text-align: center;
+}
+
+.u-text--right {
+    text-align: right;
+}
+
+.u-text--left {
+    text-align: left;
+}
+
+.u-text--small {
+    font-size: var(--text-s);
+}
+
+.u-text--large {
+    font-size: var(--text-l);
+}
+
+.u-text--primary {
+    font-family: var(--font-primary);
+}
+
+.u-text--bold {
+    font-weight: bold;
+}
+
+.u-text--lighter {
+    font-weight: lighter;
+}
+
+.u-text--medium {
+    color: rgb(var(--medium));
+}
+
+.u-text--hard {
+    color: rgb(var(--hard));
+}
+
+.u-text--very-hard {
+    color: rgb(var(--very-hard));
+}
+
+/* Color */
+.u-color--primary {
+    color: rgb(var(--primary));
+}
+
+.u-color--secondary {
+    color: rgb(var(--secondary));
+}
+
+.u-color--white {
+    color: rgb(var(--white));
+}
+
+/* Visibility */
+.u-hidden {
+    display: none;
+}
+
+/* Clears */
+.u-clear--s {
+    clear: both;
+    height: var(--space-s);
+}
+
+.u-clear--m {
+    clear: both;
+    height: calc(3 * var(--space-m));
+}

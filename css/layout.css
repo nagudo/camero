@@ -1,0 +1,39 @@
+/* General layout styles */
+
+body {
+    background: var(--white);
+    color: var(--neutral-grey);
+    font-family: var(--font-helvetica--light);
+    line-height: var(--line-height-m);
+}
+
+.l-page {
+    padding: var(--space-m) calc(2.5 * var(--space-m));
+}
+
+.l-page p {
+    text-align: justify;
+}
+
+.l-page__item--out {
+    margin-left: calc(-2.5 * var(--space-m));
+    margin-right: calc(-2.5 * var(--space-m))
+}
+
+.l-scroll--hide {
+    height: 100vh;
+    overflow: hidden;
+}
+
+h2 {
+    border-bottom: 5px solid var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--text-l);
+    margin: 0 auto var(--space-m);
+    padding-bottom: .25em;
+    width: 90%;
+}
+
+a {
+    color: var(--primary);
+}

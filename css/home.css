@@ -1,0 +1,65 @@
+/* Styles for HOME page */
+.home {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home::before {
+    background-color: rgba(0, 0, 0, .3);
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.home__wrapper {
+    z-index: 1;
+}
+
+.home__wrapper--top {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__wrapper--bottom {
+    background: var(--secondary);
+    color: var(--white);
+    padding:  var(--space-m) var(--space-s);
+}
+
+.home__toolbar {
+    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    margin: calc(2 * var(--space-m)) 0 var(--space-m);
+    width: 100%;
+}
+
+.home__button {
+    border: none;
+    flex-grow: 1;
+    font-weight: bold;
+    max-width: 220px;
+}
+
+.home__tagline {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: var(--text-l);
+}
+
+@media only screen and (min-width: 500px) {
+    .home__image {
+        max-width: 500px;
+    }
+}

@@ -1,0 +1,44 @@
+/* Styles for page with cards */
+
+.o-cards__item {
+    display: block;
+    margin-top: var(--space-m);
+    text-decoration: none;
+}
+
+.o-cards__item img {
+    width: 100%;
+}
+
+.o-cards__item h3 {
+    background: var(--grey);
+    color: var(--white);
+    text-align: left;
+    padding: calc(var(--space-s)/2) var(--space-s);
+    width: 100%;
+}
+
+.o-cards__item h3 span {
+    position: relative;
+    bottom: -3px;
+}
+
+.o-cards__item--medium h3 {
+    background: rgba(var(--medium), .6);
+}
+
+.o-cards__item--hard h3 {
+    background: rgba(var(--hard), .6);
+}
+
+.o-cards__item--very-hard h3 {
+    background: rgba(var(--very-hard), .6);
+}
+
+@media only screen and (min-width: 500px) {
+    .o-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}

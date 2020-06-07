@@ -1,0 +1,43 @@
+:root {
+    --primary:  rgb(255, 201, 25);
+    --secondary:  rgb(220, 172, 88);
+    --text:     #1a1a1a;
+
+    --blue-rgb:       0, 0, 225;
+    --red-rgb:        225, 0 ,0;
+    --black-rgb:      0, 0 , 0;
+
+    --white:        #fff;
+    --grey:         #333;
+    --neutral-grey: #666;
+    --light-grey:   #dedede;
+    --black:        #000;
+
+    /* Dificulty colors (in RGB)*/
+    --medium: var(--blue-rgb);
+    --hard: var(--red-rgb);
+    --very-hard: var(--black-rgb);
+
+    /* Text size */
+    --text-s:   .85rem;
+    --text-m:   1rem;
+    --text-l:   1.25rem;
+
+    --font-opensans: 'OpenSans', Helvetica, Arial, sans-serif;
+    --font-helvetica--light: 'HelveticaNeue Light', Helvetica, Arial, sans-serif;
+    --font-primary: var(--font-opensans);
+
+    --line-height-s: calc(1.35 * var(--text-s));
+    --line-height-m: calc(1.35 * var(--text-m));
+    --line-height-l: calc(1.35 * var(--text-l));
+
+    /* Spacing */
+    --space-s: .75em;
+    --space-m: 1em;
+    --space-l: 1.25em;
+
+    /* Roundness */
+    --radius: .25em;
+    --radius-l: .75em;
+    --radius-xl: 1em;
+}
