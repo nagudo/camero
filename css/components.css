@@ -5,10 +5,10 @@
 /* Button */
 .c-button {
     background-color: var(--white);
-    border: 1px solid var(--black);
     border-radius: var(--radius-xl);
     display: inline-block;
-    font-family: var(--font-primary);
+    font-family: var(--font-opensans--bolder);
+    font-weight: bolder;
     letter-spacing: .15em;
     text-align: center;
     text-decoration: none;
@@ -17,6 +17,11 @@
 
 .c-button--primary {
     background-color: var(--primary);
+    color: var(--white);
+}
+
+.c-button--secondary {
+    background-color: var(--secondary);
     color: var(--white);
 }
 
@@ -33,11 +38,12 @@
 }
 
 .c-nav__img {
-    position: absolute;
-    z-index: -1;
+    height: 30px;
+    width: 30px;
 }
 
 .c-nav__wrapper {
+    background: var(--grey);
     align-items: stretch;
     display: flex;
     padding: var(--space-s);
@@ -45,7 +51,7 @@
 }
 
 .c-nav__button {
-    height: 40px;
+    height: 30px;
     position: relative;
     width: 40px;
     z-index: 2;
@@ -60,8 +66,7 @@
     transition-timing-function: ease;
     transition-duration: .15s;
     transition-property: transform;
-    border-radius: 3px;
-    background-color: var(--black);
+    background-color: var(--primary);
 }
 
 .c-nav__button--bar::before,
@@ -70,14 +75,19 @@
 }
 
 .c-nav__button--bar::before {
-    top: 10px;
+    top: 13px;
     transition-timing-function: ease;
     transition-duration: .15s;
     transition-property: transform,opacity;
 }
 
 .c-nav__button--bar::after {
-    top: 20px;
+    top: 26px;
+}
+.c-nav__button--active .c-nav__button--bar,
+.c-nav__button--active .c-nav__button--bar::before,
+.c-nav__button--active .c-nav__button--bar::after {
+    background-color: var(--black);
 }
 
 .c-nav__button--active .c-nav__button--bar {
@@ -90,7 +100,7 @@
 }
 
 .c-nav__button--active .c-nav__button--bar::after {
-    transform: translate3d(0,-20px,0) rotate(-90deg);
+    transform: translate3d(0,-26px,0) rotate(-90deg);
 }
 
 @media only screen and (min-width: 500px) {

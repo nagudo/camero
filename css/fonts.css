@@ -11,3 +11,34 @@
         url('fonts/OpenSans/OpenSans-Regular.ttf') format('truetype'),
         url('fonts/OpenSans/OpenSans-Regular.svg') format('svg');
 }
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: bold;
+    src: url('fonts/OpenSans/OpenSans-Semibold.eot');
+    src: url('fonts/OpenSans/OpenSans-Semibold.eot?#iefix') format('eot'),
+        url('fonts/OpenSans/OpenSans-Semibold.woff') format('woff'),
+        url('fonts/OpenSans/OpenSans-Semibold.woff2') format('woff2'),
+        url('fonts/OpenSans/OpenSans-Semibold.ttf') format('truetype'),
+        url('fonts/OpenSans/OpenSans-Semibold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSans ExtraBold';
+    src: url('fonts/OpenSans/OpenSans-ExtraBold.eot');
+    src: url('fonts/OpenSans/OpenSans-ExtraBold.eot?#iefix') format('eot'),
+        url('fonts/OpenSans/OpenSans-ExtraBold.woff') format('woff'),
+        url('fonts/OpenSans/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('fonts/OpenSans/OpenSans-ExtraBold.ttf') format('truetype'),
+        url('fonts/OpenSans/OpenSans-ExtraBold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSans Lighter';
+    src: url('fonts/OpenSans/OpenSans-Light.eot');
+    src: url('fonts/OpenSans/OpenSans-Light.eot?#iefix') format('eot'),
+        url('fonts/OpenSans/OpenSans-Light.woff') format('woff'),
+        url('fonts/OpenSans/OpenSans-Light.woff2') format('woff2'),
+        url('fonts/OpenSans/OpenSans-Light.ttf') format('truetype'),
+        url('fonts/OpenSans/OpenSans-Light.svg') format('svg');
+}

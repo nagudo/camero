@@ -48,7 +48,6 @@
 .home__button {
     border: none;
     flex-grow: 1;
-    font-weight: bold;
     max-width: 220px;
 }
 
@@ -56,6 +55,10 @@
     color: var(--primary);
     font-weight: bold;
     font-size: var(--text-l);
+}
+
+.home__image {
+    max-width: 200px;
 }
 
 @media only screen and (min-width: 500px) {
