@@ -1,10 +1,19 @@
 /* Sponsor styles */
 
 .o-sponsors {
-    column-count: 2;
-    margin-top: calc(2 * var(--space-m));
+    column-count: 3;
+    margin: calc(2 * var(--space-m)) auto;
 }
 
 .o-sponsors__item {
+    background: var(--white);
+    margin-bottom: var(--space-m);
     padding: var(--space-m);
+}
+
+
+@media only screen and (min-width: 700px) {
+    .o-sponsors {
+        max-width: 500px;
+    }
 }

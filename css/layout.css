@@ -12,8 +12,16 @@ body {
     font-family: var(--font-opensans--lighter);
 }
 
-.l-page {
-    text-align: justify;
+.l-page > p {
+    text-indent: calc(2.5 * var(--space-m));
+}
+
+.u-text--center p {
+    text-indent: 0;
+}
+
+.l-page--reverse {
+    background: var(--primary);
 }
 
 .l-page__item--out {
@@ -37,6 +45,18 @@ h2 {
     width: 90%;
 }
 
+.l-page--reverse h2 {
+    border-bottom-color: var(--white);
+}
+
 a {
     color: var(--primary);
+}
+
+@media only screen and (min-width: 1000px) {
+    .l-page {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

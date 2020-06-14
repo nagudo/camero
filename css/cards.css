@@ -1,41 +1,79 @@
 /* Styles for page with cards */
 
 .o-cards__item {
-    display: block;
-    margin-top: var(--space-m);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    
+    height: 80px;
+    margin-bottom: calc(.5 * var(--space-s));
     text-decoration: none;
 }
 
+.o-cards__item--active {
+    display: flex;
+}
+
+.o-cards__item--medium {
+    background: rgb(var(--medium));
+}
+
+.o-cards__item--hard {
+    background: rgb(var(--hard));
+}
+
+.o-cards__item--very-hard {
+    background: rgb(var(--very-hard));
+}
+
+.o-cards__num {
+    color: var(--white);
+    flex: 0 0 80px;
+    font-family: var(--font-opensans--bolder);
+    font-size: calc(2 * var(--text-l));
+}
+
+.o-cards__title {
+    flex: 1;
+}
+
+.o-cards__title::before {
+   background: var(--grey);
+   content:'';
+   position: absolute;
+   top: 0;
+   left: 80px;
+   right: 0;
+   bottom: 0;
+   width: calc(100% - 80px);
+   z-index: 1;
+}
+
 .o-cards__item img {
-    width: 100%;
+   position: absolute;
+   top: 0;
+   left: 80px;
+   right: 0;
+   bottom: 0;
+   opacity: .6;
+   z-index: 1;
 }
 
 .o-cards__item h3 {
-    background: var(--grey);
     color: var(--white);
-    text-align: left;
-    padding: calc(var(--space-s)/2) var(--space-s);
-    width: 100%;
-}
-
-.o-cards__item h3 span {
+    font-size: var(--text-l);
+    font-weight: bolder;
+    letter-spacing: .125rem;
+    padding: 0 var(--space-s);
     position: relative;
-    bottom: -3px;
+    text-align: left;
+    z-index: 2;
 }
 
-.o-cards__item--medium h3 {
-    background: rgba(var(--medium), .6);
-}
 
-.o-cards__item--hard h3 {
-    background: rgba(var(--hard), .6);
-}
-
-.o-cards__item--very-hard h3 {
-    background: rgba(var(--very-hard), .6);
-}
-
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
     .o-cards {
         display: grid;
         grid-template-columns: 1fr 1fr;

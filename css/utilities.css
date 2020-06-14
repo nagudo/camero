@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.u-text--justify {
+    text-align: justify;
+}
+
 .u-text--right {
     text-align: right;
 }
@@ -28,11 +32,11 @@
 }
 
 .u-text--bold {
-    font-weight: bold;
+    font-family: var(--font-opensans--bolder);
 }
 
 .u-text--lighter {
-    font-weight: lighter;
+    font-family: var(--font-opensans--lighter);
 }
 
 .u-text--medium {
@@ -74,4 +78,9 @@
 .u-clear--m {
     clear: both;
     height: calc(3 * var(--space-m));
+}
+
+.u-clear--l {
+    clear: both;
+    height: calc(3 * var(--space-l));
 }
