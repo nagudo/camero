@@ -30,3 +30,8 @@
     min-height: 100px;
     padding-top: .75em;
 }
+
+.o-form .c-button {
+    -webkit-appearance: none;
+    border: none;
+}

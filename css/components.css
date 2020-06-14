@@ -5,14 +5,17 @@
 /* Button */
 .c-button {
     background-color: var(--white);
+    border: 0;
     border-radius: var(--radius-xl);
     display: inline-block;
     font-family: var(--font-opensans--bolder);
     font-weight: bolder;
-    letter-spacing: .15em;
+    letter-spacing: var(--letter-spacing);
+    min-width: 200px;
     text-align: center;
     text-decoration: none;
     padding: var(--space-m);
+    -webkit-appearance: none;
 }
 
 .c-button--primary {
@@ -27,6 +30,8 @@
 
 .c-button--simple {
     border-color: transparent;
+    font-family: var(--font-primary);
+    letter-spacing: 0;
     padding: 0;
 }
 

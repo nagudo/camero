@@ -24,6 +24,7 @@
     --text-l:   1.25rem;
 
     --text-color: var(--black);
+    --letter-spacing: .125rem;
 
     --font-opensans: 'OpenSans', Helvetica, Arial, sans-serif;
     --font-opensans--bolder: 'OpenSans ExtraBold', Helvetica, Arial, sans-serif;
