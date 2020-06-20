@@ -39,10 +39,18 @@ h2 {
     font-family: var(--font-primary);
     font-size: var(--text-l);
     font-weight: bold;
-    margin: var(--space-l) auto calc(var(--space-l) * 1.5);
+    margin: var(--space-l) auto var(--space-l);
     padding-bottom: .25em;
     text-align: center;
     width: 90%;
+}
+
+h3 {
+    color: var(--secondary);
+    font-family: var(--font-opensans--bolder);
+    font-size: var(--text-l);
+    margin: var(--space-l) auto var(--space-l);
+    text-align: center;
 }
 
 .l-page--reverse h2 {

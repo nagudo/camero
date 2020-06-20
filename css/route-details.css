@@ -1,7 +1,15 @@
 /* Styles for ROUTE DETAIL page */
 .o-route__header {
     margin-top: calc(-1 * var(--space-m));
+    height: 220px;
+    overflow: hidden;
     position: relative;
+}
+
+.o-route__header img {
+    min-height: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 
 .o-route__header h3 {
