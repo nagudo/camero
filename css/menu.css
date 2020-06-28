@@ -14,13 +14,13 @@
     /* Animation */
     transition: 1s;
     left: -100vw;
-    z-index: 1;
+    z-index: 3;
 }
 
 .o-nav__menu--visible {
     transition: 1s;
     left: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 .o-nav__items {
