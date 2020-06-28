@@ -1,6 +1,6 @@
 /* Styles for HOME page */
 .home {
-    background-image: url('../img/bg.jpg');
+    background-image: url('../img/bg_new.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -41,7 +41,7 @@
     align-items: stretch;
     display: flex;
     justify-content: center;
-    margin: calc(2 * var(--space-m)) 0 var(--space-m);
+    margin: calc(3.5 * var(--space-m)) 0 var(--space-m);
     width: 100%;
 }
 
@@ -57,8 +57,13 @@
     font-size: var(--text-l);
 }
 
-.home__image {
+.home__logo {
     max-width: 200px;
+    margin: 0 auto;
+}
+
+.home__brand {
+    max-width: 260px;
 }
 
 @media only screen and (min-width: 500px) {
