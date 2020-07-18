@@ -23,6 +23,10 @@
     font-size: var(--text-s);
 }
 
+.u-text--medium {
+    font-size: var(--text-m);
+}
+
 .u-text--large {
     font-size: var(--text-l);
 }
@@ -61,7 +65,11 @@
 }
 
 .u-color--white {
-    color: rgb(var(--white));
+    color: var(--white);
+}
+
+.u-color--black {
+    color: var(--black);
 }
 
 /* Visibility */

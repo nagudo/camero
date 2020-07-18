@@ -1,19 +1,106 @@
 /* Sponsor styles */
 
 .o-sponsors {
-    column-count: 3;
-    margin: calc(2 * var(--space-m)) auto;
+    display: grid;
+    align-content: center;
+    column-gap: var(--space-m);
+  	row-gap: var(--space-m);
+}
+
+.o-sponsors--financiado {
+	grid-template-areas: ' logo1 logo2' 'logo3 logo3' 'logo4 logo4';
+}
+
+.o-sponsors--gestionado {
+	grid-template-areas: ' logo1 logo1';
+}
+
+.o-sponsors--colaboran {
+	grid-template-areas: ' logo1 logo1 logo2';
 }
 
 .o-sponsors__item {
-    background: var(--white);
-    margin-bottom: var(--space-m);
-    padding: var(--space-m);
+	align-items: center;
+	background: var(--white);
+	display: grid;
+	justify-self: center;
+	padding: var(--space-s);
+}
+
+.o-sponsors__item--1 {
+	grid-area: logo1;
+}
+
+.o-sponsors__item--2 {
+	grid-area: logo2;
+}
+
+.o-sponsors__item--3 {
+	grid-area: logo3;
+}
+
+.o-sponsors__item--4 {
+	grid-area: logo4;
+}
+
+.o-sponsors__item img {
+	max-height: 100%;
+}
+
+.o-sponsors-list {
+	background: var(--white);
+	padding: var(--space-s);
+	text-align: left;
 }
 
 
-@media only screen and (min-width: 700px) {
-    .o-sponsors {
-        max-width: 500px;
-    }
+@media only screen and (min-width: 500px) {
+	.o-sponsors {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: left;
+	}
+
+	.o-sponsors__item {
+		align-items: center;
+	    background: var(--white);
+	    border: 5px solid transparent;
+	    display: flex;
+	    height: 4.5rem;
+	    justify-content: center;
+	    margin-bottom: var(--space-s);
+	    padding: 0;
+	}
+
+	.o-sponsors__item img {
+		max-height: 100%;
+	}
+
+	.o-sponsors-wrapper {
+		display: grid;
+		grid-template-areas: 'financiado financiado financiado gestionado''beneficiarios beneficiarios colaboradores colaboradores';
+	}
+
+	.o-sponsors-financiado {
+		grid-area: financiado;
+		margin-right: var(--space-s);
+	}
+
+	.o-sponsors-gestionado {
+		grid-area: gestionado;
+	}
+
+	.o-sponsors-beneficiarios {
+		grid-area: beneficiarios;
+		margin-right: var(--space-s);
+	}
+
+	.o-sponsors-colaboradores {
+		grid-area: colaboradores;
+	}
+
+	.o-sponsors-wrapper h3 {
+		text-align: left;
+	}
+
 }
