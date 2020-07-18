@@ -42,9 +42,8 @@
     text-decoration: none;
 }
 
-.c-nav__img {
+.c-nav__img img {
     height: 30px;
-    width: 30px;
 }
 
 .c-nav__wrapper {
@@ -163,4 +162,40 @@
     width: 1px;
     min-width: 100%;
     max-width: 100%;
+}
+
+
+/* Banner image */
+.c-banner-image {
+    margin-top: calc(-1 * var(--space-m));
+    position: relative;
+}
+
+.c-banner-image__logo {
+    bottom: -2rem;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 30vw;
+}
+
+@media only screen and (min-width: 768px) {
+    .c-banner-image__bg {
+        height: 20rem;
+        object-fit: fill;
+        width: 100%;
+    }
+
+    .c-banner-image__logo {
+        max-width: 10rem;
+    }
+}
+
+
+/* Paragraph image */
+.c-paragraph-img {
+    float: left;
+    padding-right: var(--space-m);
+    width: 7rem;
 }

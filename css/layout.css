@@ -12,7 +12,7 @@ body {
     font-family: var(--font-opensans--lighter);
 }
 
-.l-page > p {
+.l-page > p:not(.no-indent) {
     text-indent: calc(2.5 * var(--space-m));
 }
 
