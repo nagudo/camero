@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <!--<meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport"
@@ -16,8 +17,8 @@
     <title>Caminos de Cameros</title>
 </head>
 
-<body>
-    <div class="app route-detail">
+<body onload="onBodyLoad()">
+    <div class="app about">
         <div class="c-nav">
             <div class="c-nav__wrapper">
                 <div id="navButton" class="c-nav__button">
@@ -39,63 +40,46 @@
                 </ul>
             </div>
         </div>
-
-        <div class="l-page u-text--justify o-route">
+        
+        <div class="l-page u-text--center map__wrapper">
             <div class="l-page__item--out">
                 <div class="o-route__header">
-                    <img class="o-route__img" src="img/trailbtt/ruta1.jpg" alt="Detalles sugea" title="Detalles Sugea" />
+                    <img src="img/trailbtt/ruta6.jpg" alt="Detalles" title="Detalles" />
                      <h3>
                         <div class="o-route__num o-route__num--hard">
-                            <span>1</span>
+                            <span>6</span>
                         </div>
                         <div class="o-route__title">
                             <!--<span>TERROBA</span>-->
-                            <span class="u-text--large">ENTRE <br/> BUITRES</span>
+                            <span class="u-text--large">BARRANCOS <br/>DE SOTO</span>
                         </div>
                     </h3>
                 </div>
             </div>
             <div class="l-page__item--out">
-                <img src="img/datosrutas/01datos.png" alt="Detalles ruta" title="Detalles ruta" />
+                <img src="img/datosrutas/05datos.png" alt="Detalles" title="Detalles" />
             </div>
             <div class="l-page__item--out">
                 <div class="o-route__tagline u-text--medium">DIFICULTAD ALTA</div>
             </div>
-            
             <div class="u-clear--m"></div>
-            <p>
-                Intensa ruta diseñada para los amantes de las sendas tanto en ascenso como en descenso. Pon a prueba tu destreza en terrenos muy variados, desde suelos rocosos hasta frondosos bosques.
-            </p>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1_qTg1zMzaIQmUyHwMT7eOw5VoppwqYTX" width="100%" height="480"></iframe>
+            <div class="text-center">
+                Pulsa el icono [  ] para iniciar ruta
+            </div>
+            <div class="u-clear--m"></div>
+            <button class="c-button c-button--secondary" onclick="fileDownload('tracks/00.Sugea.OFICIAL.GPX')">DESCARGAR GPX</button>
             <div class="u-clear--s"></div>
-            <p>
-                Atravesando la dehesa de Luezas podrás descubrir esta aldea que resiste en los altos de la sierra. Desciende por el carrascal de Terroba y su densa umbría. Remonta hasta las cimas y contempla las bonitas vistas que hay desde el balcón natural en la ermita de Serrias. Para terminar queda lo más espectacular, pedalea a través del cañón del Leza y presencia el vuelo de los buitres asomado a sus imponentes cortados.
-            </p>
-            <div class="u-clear--s"></div>
-            <p>
-                No subestimes la distancia ni el desnivel ya que la dureza del terreno hace que sea más costosa de lo que pueda parecer.
-            </p>
+            <a class="c-button c-button--primary" href="httpsXXXXXXXXXXXXXXXXXXXX"></span>VER EN WIKILOC <span class="u-text--small fas fa-external-link-alt"></a>
             <div class="u-clear--m"></div>
-            <div class="l-page__item--out">
-                <img src="img/profiles/01perfil.png" alt="Perfil" title="Perfil" />
-            </div>
+            <a class="c-button c-button--simple" href="route-detail-06.html"> <span class="fas fa-arrow-left"></span> Volver a la ruta</a>
             <div class="u-clear--m"></div>
-            
-            <div class="l-page__item--out">
-                <img src="img/maps/mapas_caminos01.jpeg" alt="Mapa" title="Mapa" />
-            </div>
-            <div class="u-clear--m"></div>
-            <div class="u-text--center">
-                <a class="c-button c-button--primary" href="route-iframe-01.html">INICIAR RUTA</a>
-                <div class="u-clear--m"></div>
-                <a class="c-button c-button--simple" href="routes.html"> <span class="fas fa-arrow-left"></span> Volver a la lista</a>
-                <div class="u-clear--m"></div>
-            </div>
-        
         </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/download.js"></script>
 </body>
 
 </html>
