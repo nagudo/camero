@@ -13,7 +13,8 @@ body {
 }
 
 .l-page > p:not(.no-indent) {
-    text-indent: calc(2.5 * var(--space-m));
+    /*Comento la siguiente linea para no usar sangrias*/
+    /*text-indent: calc(2.5 * var(--space-m));*/
 }
 
 .u-text--center p {
