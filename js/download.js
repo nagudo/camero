@@ -21,8 +21,7 @@ function getNativeDlPath() {
 // con los plugins de apache cordova (phonegap) "file-transfer" y "file" consigo hacer la descarga
 function fileDownload(fileName) {
     // al pulsar el boton del html le paso el nombre de la ruta, y lo concateno aqui, con la url de internet donde estan los ficheros gpx
-    var uri = 'http://caminosdecameros.com/wp-content/uploads/2020/08/' + fileName;
-    //var uri = 'http://rutas.nachoagudo.com/tracks/' + fileName;
+    var uri = 'https://caminosdecameros.com/tracks/' + fileName;
 
     window.resolveLocalFileSystemURL(getNativeDlPath(), fsAccess, errorCb);
 

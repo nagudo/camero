@@ -16,7 +16,7 @@
 }
 
 .o-sponsors--colaboran {
-	grid-template-areas: ' logo1 logo1 logo2';
+	grid-template-areas: ' logo1 logo2';
 }
 
 .o-sponsors__item {
