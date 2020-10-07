@@ -43,14 +43,10 @@
 	grid-area: logo4;
 }
 
-.o-sponsors__item img {
-	max-height: 100%;
-}
 
 .o-sponsors-list {
-	background: var(--white);
-	padding: var(--space-s);
 	text-align: left;
+	color: var(--black);
 }
 
 
