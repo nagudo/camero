@@ -3,7 +3,7 @@
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];
-$para = 'nachoecha@gmail.com';
+$para = 'info@caminosdecameros.com';
 $titulo = $_POST['asunto'];
 $header = 'From: ' . $email . "\r\n";
 //$header .= "MIME-Version: 1.0\r\n";
